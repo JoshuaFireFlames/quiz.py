@@ -8,6 +8,7 @@ print ("To chose from.")
 print ("When you are ready to answer the question, hit enter.")
 #These are the intructions above.
 
+print("Q1")
 print("How many letters are in the alphabet.")
 print ("1) 26")
 print ("2) 6")
