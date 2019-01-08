@@ -1,5 +1,8 @@
 #Defining function
 
+global score
+score = 0 
+
 def run_quest(quest, ansU, check, ansR):
     print(quest)
     while check == False:
@@ -7,23 +10,17 @@ def run_quest(quest, ansU, check, ansR):
             ansU = int(input("Choose the best reponse that seems fit." ))
             if ansU == ansR:
                 print("Ok")
-                #grade += 1
+                global score 
+                score += 1
                 check = True
             elif 0 < ansU < 5:
                 print("Ok")
-                check - True
+                check = True
             else:
                 print("Please enter a integer 1-4.") # unacceptable int response
 
         except ValueError:
             print("Please read answer choices.") # Non-integer response
-
-
-
-
-score = int (0)
-
-
 
 #q1 variables
 q1 ="""How many letters are in the alphabet ?
