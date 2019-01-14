@@ -1,4 +1,6 @@
-#Defining function
+#Importing data file
+
+from quizJWdata import *
 
 global score
 score = 0 
