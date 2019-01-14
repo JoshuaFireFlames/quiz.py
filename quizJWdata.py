@@ -100,7 +100,3 @@ q10 ="""When was the aston martin (cars) founded ?
 q10Ans = int(0)
 answered10 = False
 q10r = 1 
-  
-  
-  
-
