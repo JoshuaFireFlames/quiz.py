@@ -1,3 +1,7 @@
+# Score
+global score
+score = 0
+
 #Custom functions 
 def run_quest(quest, ansU, check, ansR):
     print(quest)
