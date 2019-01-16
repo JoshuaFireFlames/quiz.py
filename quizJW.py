@@ -3,6 +3,10 @@
 #Importing the data.
 from quizJWdata import *
 
+#Importing the function file.
+from quizJWfunc import *
+
+
 # Score
 global score
 score = 0 
