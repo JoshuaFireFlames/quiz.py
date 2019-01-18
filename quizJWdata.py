@@ -1,4 +1,8 @@
-#data for questions 
+#data for questions
+
+# Score
+global score
+score = 0
 
 #q1 variables
 q1 ="""How many letters are in the alphabet ?
