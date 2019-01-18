@@ -3,13 +3,31 @@
 #Importing the data.
 from quizJWdata import *
 
-#Importing the function file.
-from quizJWfunc import *
-
-
 # Score
 global score
-score = 0 
+score = 0
+
+#Custom functions 
+def run_quest(quest, ansU, check, ansR):
+    print(quest)
+    while check == False:
+        try:
+            ansU = int(input("Choose the best reponse that seems fit." ))
+            if ansU == ansR:
+                print("Ok")
+                global score 
+                score += 1
+                check = True
+            elif 0 < ansU < 5:
+                print("Ok")
+                check = True
+            else:
+                print("Please enter a integer 1-4.") # unacceptable int response
+
+        except ValueError:
+            print("Please read answer choices.") # Non-integer response
+
+1
 
 #intro
 print ("Hello and welcome to my ten question quiz")
@@ -60,7 +78,7 @@ elif score == 2:
     print("This is not a great score, you can do much better.") 
 
 elif socre == 1:
-    print("Were you trying")
+    print("Were you trying ?")
 
 elif socre == 0:
     print("You should go on google to look up the answers and study to get a better score.")
